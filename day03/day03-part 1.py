@@ -2,7 +2,6 @@
 # Author: Jarro van Ginkel
 from aoc_utils import elapsed, parse_data_as_lines, start_time
 from rich import print
-from itertools import cycle
 
 content = parse_data_as_lines(3)
 
