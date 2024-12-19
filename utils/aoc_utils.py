@@ -3,6 +3,7 @@ import sys
 from rich import print
 
 start_time = time.time()
+is_example = "--example" in sys.argv
 
 def elapsed(start_time):
     elapsed = time.time() - start_time
