@@ -1,6 +1,6 @@
 import os
 
-for i in range(1, 26, 1):
+for i in range(6, 26, 1):
     # create folder
     folder = f"./day{i:02d}"
     os.mkdir(folder)
@@ -13,9 +13,8 @@ for i in range(1, 26, 1):
             f.write("from rich import print\n")
             f.write("\n")
             f.write(f'content = parse_data_as_lines({i})\n')
-            f.write("\n\n")
             f.write("result = 0\n")
-            f.write("\n")
+            f.write("\n\n")
             f.write(f"print(f\"Part {part}: {{result}}, {{elapsed(start_time)}}\")")
 
     with open(folder + "/input.txt", "w") as f:
